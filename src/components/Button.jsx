@@ -1,0 +1,14 @@
+import React from 'react'
+import styles from './Button.module.css'
+
+
+
+function Button(props) {
+  return (
+    <button className={styles.button} number={props.number} onClick={() => props.handleClick(props.number)}>
+        {props.number}
+    </button>
+  )
+}
+
+export default Button
